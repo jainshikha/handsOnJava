@@ -37,7 +37,7 @@ public class ArrayStream {
     List<List<Integer>> allList = Arrays.asList(listOfList, listOfList2);
     allList.stream().flatMap(l -> l.stream()).forEach(System.out::println);
 
-    String name = "sachin sachin rahul surabh";
+    String name = "sachin sachin rahul surabh sachin sachin rahul surabh";
     List<String> names = new ArrayList<>(Arrays.asList(name.split(" ")));
     Map<Object, Long> nameStartsWith = new LinkedHashMap<>();
 
@@ -70,6 +70,7 @@ public class ArrayStream {
     System.out.println(m1);
 
     String inputString = "ilikeicecream";
+    wordBreak(inputString);
   }
 
   public static String wordBreak(String input) {
@@ -88,6 +89,12 @@ public class ArrayStream {
       "ice",
       "cream"
     };
+
+    for (String x : temp_dictionary) {
+      if (input.contains(x)) {
+        System.out.println(x);
+      }
+    }
     return "";
   }
 }

@@ -1,0 +1,8 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(õ×™üÿÿÿÿÿ
+i
+java:S2975@"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(ÙõÕ‹
+^
+java:S1182@"HUse super.clone() to create and seed the cloned instance to be returned.(ÙõÕ‹
+_
+java:S2259"DA "NullPointerException" could be thrown; "output" is nullable here.(õ×™üÿÿÿÿÿ
